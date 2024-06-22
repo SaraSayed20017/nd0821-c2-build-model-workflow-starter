@@ -29,28 +29,26 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="This steps cleans the data")
 
-
     parser.add_argument(
         "--parameter1", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        type=int,  # Assuming parameter1 is an integer
+        help="Description of parameter1",
         required=True
     )
 
     parser.add_argument(
         "--parameter2", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        type=int,  # Assuming parameter2 is an integer
+        help="Description of parameter2",
         required=True
     )
 
     parser.add_argument(
         "--parameter3", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        type=str,  # Assuming parameter3 is a string
+        help="Description of parameter3",
         required=True
     )
-
 
     args = parser.parse_args()
 
